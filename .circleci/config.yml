@@ -25,7 +25,11 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       # run tests!
-      - run: npm test        
+      - run:
+         name: Run test
+         command: npm run test
+         environment:
+           NODE_ENV: production (edited)
   deploy:
     docker:
       - image: circleci/node:8.11
