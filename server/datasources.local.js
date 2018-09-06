@@ -8,7 +8,7 @@ module.exports = {
       "port": 0,
       "url": "",
       "database": "",
-      "password": "",
+      // "password": "",
       "name": "MongoDB",
       "user": "",
       "connector": "mongodb"
